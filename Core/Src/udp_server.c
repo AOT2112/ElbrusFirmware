@@ -71,15 +71,6 @@ void udp_server_receive_callback(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 
 void periodic_handler() {
 
-//#if LWIP_TCP
-  /* TCP periodic process every 250 ms */
-//  if (systickcount - TCPTimer >= 250) {
-//    TCPTimer =  systickcount;
-//    tcp_tmr();
-//  }
-
-//#endif
-
   /* ARP periodic process every 1s */
 	if (sysTickCount < ARPTimer)
 		ARPTimer =  sysTickCount;
