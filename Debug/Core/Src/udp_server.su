@@ -1,0 +1,3 @@
+../Core/Src/udp_server.c:39:6:udp_server_init	24	static
+../Core/Src/udp_server.c:53:6:udp_server_receive_callback	32	static
+../Core/Src/udp_server.c:72:6:periodic_handler	8	static
